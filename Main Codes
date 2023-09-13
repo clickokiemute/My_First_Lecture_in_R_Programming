@@ -1,0 +1,83 @@
+##################################
+# Lesson1 - My first lesson in R #
+#          09.09.2022            #
+##################################
+
+# Use R as calculator
+# just type the expression
+# The expression can include operators +, -, *, /, ^, and many other
+# Keep priority of operators in your mind
+4+5
+4+5*2
+4+5*2^3
+
+# Functions can be used in R expression
+log(10)         # natural logarithm
+exp(2.302585)   # exponential function
+
+# Variables or objects can be used
+# Object names are case sensitive!
+
+x<-log(10)
+exp(x)
+
+# Rounding
+xx<-123.4567
+round(xx)
+round(xx,2)
+round(xx,-2)
+
+round(55.5)
+round(54.5)
+round(-55.5)
+round(-54.5)
+
+ceiling(xx)
+floor(xx)
+
+# User can define his own function
+# User defined function is also an object
+# Example: Create a function for calculating cone volume
+Vcone<-function(r,h) pi*r^2*h
+Vcone(2,5)
+
+# Objects can be deleted (removed from memory)
+rm(x,Vcone)
+
+#  Character data type
+txt<-"Tere"
+3*txt
+
+# Functions for character data
+TXT<-"Head aega"
+paste(txt,TXT,777)
+paste(txt,TXT,777,sep="-")
+toupper(txt)
+tolower(txt)
+
+T7<-"777"
+3*T7
+
+
+# Checking data type
+is.numeric(T7)
+is.numeric(x1)
+is.character(T7)
+
+# Changing data type
+t7<-as.numeric(T7)
+
+
+tt<-"andres353info"
+
+TT<-as.numeric(substr(tt,7,9))
+
+# The main data structure is vector in R
+v<-c(4,6,9,6)
+length(v) # number of vector components
+sum(v)    # sum of vector components
+
+# Operating with vectors
+2*v
+
+## The end of lesson 1 ##
